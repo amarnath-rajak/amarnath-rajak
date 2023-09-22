@@ -1,89 +1,193 @@
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
 
-    .container{  
-    background-color: #e5e5fd;
-    min-height: 100vh;
-    border: 10px solid #1D1E4C;
-}
+  html {
+    font-size: 62.5%;
+  }
+  html,
+  body {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+  }
 
-.content{
-    max-width: 900px;
+  body{
+font-size: 1.4rem;
+  }
+
+   ul{
+    list-style: none;
+   }
+
+  header{
+    position: sticky;
+    top: 0;
+    background: #fff;
+  }
+
+  nav{
+    padding: 1rem;
     margin: 0 auto;
-}
-
-.topsection{
-    margin: 100px;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+  }
+
+  nav ul{
+    display: flex;
+    gap: 2rem;
+  }
+
+nav ul li{
+    font-size: 1.8rem;
 }
 
-.topsection h1{
-font-size: 40px;
-font-weight: bold;
-color: #1D1E4C;
-text-transform: uppercase;
+nav ul li:hover{
+    border-bottom: #c14b4b 2px solid;
 }
 
-.topsection h4{
-    font-size: 30px;
-    text-align: end;
+nav i{
+    font-size: 2.5rem;
 }
 
-.imagecontainer{
-    border-radius: 50%;
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* hero section */
+
+#hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.herocontent h1{
+    font-size: 6rem;
+    line-height: 1.2;
+}
+
+.herocontent h4{
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+.heroimg img{
+    border-radius: 5rem;
+}
+
+/* long card section */
+
+.hcard{
+    display: flex;
+    margin: 2rem 1rem;
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+    align-items: center;
+    border: 1px solid #e2e2e2;
+    border-radius: 0.5rem;
     overflow: hidden;
 }
 
-.imagecontainer,img{
-width: 300px;
-height: 320px;
+.cardcontent{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.aboutsection{
-    margin-top: 50px;
+.status{
+    display: flex;
+    justify-content: space-between;
 }
 
-.aboutsection h2{
-    font-size: 70px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    
+.readbtn{
+    all: unset;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
 }
 
-.aboutsection p{
-    font-size: 20px;
-    letter-spacing: 1.2px;
-    line-height: 30px;
-    text-align: justify;
+.readbtn:hover{
+    border-bottom: 1px solid #ccc;
 }
 
-.biography{
-    margin-top: 50px;
+/* v cards */
+
+.vcard{
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 320px;
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+    align-items: center;
+    border: 1px solid #e2e2e2;
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
 
-.biography h3{
-    margin-bottom: 20px;
+.cardcontainer{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-.biography ul{
-    margin-left: 50px;
+.cardwrapper{
+    display: flex;
+    justify-content: center;
 }
 
-.biography li{
-    margin-bottom: 15px;
+.vcard img{
+    width: 100%;
+    height: 100%;
 }
 
-footer{
-    margin: 50px 0;
-}
-
-footer p{
-text-align: end;
-}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  footer ul {
+    display: flex;
+    gap: 2rem;
+  }
+  footer ul li {
+    font-size: 1.8rem;
+  }
+  
+  /* Post page */
+  .banner_image img {
+    width: 100%;
+  }
+  .post h1 {
+    font-size: 3rem;
+  }
+  .post hr {
+    margin: 3rem 0;
+  }
+  .about-author {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
